@@ -1,9 +1,15 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
       <div>
-        <p>
-        test
-        </p>
+        <p>home</p>
+        <Link
+          href="/fontsize"
+          className=""
+        >
+          fontsize
+        </Link>
       </div>
   )
 }
