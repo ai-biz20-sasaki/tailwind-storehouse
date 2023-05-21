@@ -2,23 +2,18 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div>
-      <div className="flex flex-row p-2 m-1">
-        <p>home</p>
-      </div>
-      <div className="flex flex-row p-2 m-1">
-        <div className="basis-1/4 p-2 m-1">
-          <Link 
-            href="/fontsize"
-          >
-            fontsize
-          </Link>
-          <br />
-        </div>
-        <div className="basis-3/4 p-2 m-1">
-        <p>aaa</p>
-        </div>
-      </div>
+    <div className='container mx-auto h-64'>
+        <Link className='w-full h-full flex justify-center items-center text-5xl'
+          href="/main"
+        >
+          Tailwind Storehouse <br />
+        </Link>
+        <p className='w-full flex justify-center items-center'>
+          ようこそ！
+        </p>
+        <p className='w-full flex justify-center items-center'>
+          このサイトはTailWindのサンプル集です。
+        </p>
     </div>
   )
 }
