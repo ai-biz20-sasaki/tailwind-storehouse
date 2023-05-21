@@ -9,10 +9,10 @@ export default function fontsize() {
       <div className="flex flex-row p-2 m-1">
         <div className="basis-1/4 p-2 m-1">
           <Link
-            href="/"
+            href="/main"
             className=""
           >
-            homeに戻る
+            mainに戻る
           </Link>
         </div>
         <div className="basis-3/4 p-2 m-1">
