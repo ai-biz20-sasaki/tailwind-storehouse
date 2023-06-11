@@ -1,6 +1,8 @@
 import Link from 'next/link';
+import Breadcrumb from "../components/breadcrumb"
 
-export default function main() {
+export default function main(props) {
+  console.log(props.breadcrumb)
   return (
     <div>
       <div className="flex flex-row p-2 m-1">
