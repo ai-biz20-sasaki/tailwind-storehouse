@@ -20,10 +20,18 @@ export default function main() {
           <div onClick={() => setCurrentPos('fontsize')}>fontsize</div>
         </div>        
         <div className="basis-3/4 p-2 m-1">
-        {currentPos === 'main' 
-          ? (<Main />) 
-          : (<Fontsize />)
-        }          
+        {
+          //即時関数の中でif文を実行する
+          (()=> {
+            if( currentPos === 'main' ) {
+              return (<Main />) 
+            } else if( currentPos === 'fontsize' ) {
+              return (<Fontsize />)
+            } else {
+              return ("コンポーネントがない！")
+            }
+          })()
+        }
         </div>
       </div>
     </div>
