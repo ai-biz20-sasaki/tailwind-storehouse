@@ -10,7 +10,7 @@ export default function LeftSidebar() {
         </Link>
       </div>
       <div>
-        <Link className="" href="/fontsize">
+        <Link className="" href="/main/fontsize">
             fontsize
         </Link>
       </div>
