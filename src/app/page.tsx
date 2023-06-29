@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from './styles.module.css'
+import { text } from "stream/consumers";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
         <div className="text-2xl p-4">
           ようこそ！
         </div>
-        <div className={`${styles.dashboard} pt-2`}>
+        <div className={`${styles["text-normal"]} pt-2`}>
           このサイトはTailWindのサンプル集です。
         </div>
       </div>
