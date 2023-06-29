@@ -1,19 +1,23 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className='container mx-auto h-64'>
-        <Link className='w-full h-full flex justify-center items-center text-5xl'
-          href="/main"
-        >
-          Tailwind Storehouse <br />
-        </Link>
-        <p className='w-full flex justify-center items-center'>
+    <div className="container mx-auto">
+      <div className="flex flex-col justify-center items-center mt-32">
+        <div className="p-4">
+          <Link className="text-5xl"
+            href="/main"
+          >
+            Tailwind Storehouse <br />
+          </Link>
+        </div>
+        <div className="p-4">
           ようこそ！
-        </p>
-        <p className='w-full flex justify-center items-center'>
+        </div>
+        <div className="p-4">
           このサイトはTailWindのサンプル集です。
-        </p>
+        </div>
+      </div>
     </div>
   )
 }
