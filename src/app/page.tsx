@@ -1,18 +1,20 @@
+"use client"
 import Link from "next/link";
+import { PosContext } from "../components/pos-context";
 import styles from './styles.module.css'
-import { text } from "stream/consumers";
 
 export default function Home() {
+
   return (
     <div className="container mx-auto">
       <div className="flex flex-col justify-center items-center mt-32">
-        <div className="p-4">
+        <PosContext.Provider value="main">
           <Link className="text-5xl"
             href="/main"
           >
             Tailwind Storehouse <br />
           </Link>
-        </div>
+        </PosContext.Provider>
         <div className="text-2xl p-4">
           ようこそ！
         </div>
