@@ -1,0 +1,59 @@
+.anima-demo-01 {
+  animation-duration: 3s;
+  animation-name: slideIn;
+}
+
+@keyframes slideIn {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.anima-demo-02 {
+  animation-duration: 10s;
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.anima-demo-03 {
+  animation-duration: 5s;
+  animation-name: expansion;
+}
+
+@keyframes expansion {
+  from {
+    font-size: 4px;
+  }
+
+  to {
+    font-size: 32px;
+  }
+}
+
+.anima-demo-04 {
+  background:  url(/imgs/nekopunch_a.png) no-repeat;
+  width: 250px;
+  height: 250px;
+  animation: nekopanch 3s steps(3) infinite;
+}
+
+@keyframes nekopanch {
+  to {
+    background-position: -750px 0;
+  }
+}

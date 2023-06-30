@@ -19,6 +19,11 @@ export default function LeftSidebar() {
           transition
         </Link>
       </div>
+      <div>
+        <Link className="" href="/main/animation">
+          animation
+        </Link>
+      </div>
     </>
   )
 }
