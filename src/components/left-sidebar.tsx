@@ -14,6 +14,11 @@ export default function LeftSidebar() {
             fontsize
         </Link>
       </div>
+      <div>
+        <Link className="" href="/main/transition">
+          transition
+        </Link>
+      </div>
     </>
   )
 }

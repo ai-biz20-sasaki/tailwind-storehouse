@@ -1,0 +1,17 @@
+.trans-demo-01 {
+  font-size: 14px;
+  transition: font-size 3s 1s;
+}
+
+.trans-demo-01:hover {
+  font-size: 36px;
+}
+
+.trans-demo-02 {
+  background-color: red;
+  transition: background-color 3s 1s;
+}
+
+.trans-demo-02-clicked {
+  background-color: blue;
+}
